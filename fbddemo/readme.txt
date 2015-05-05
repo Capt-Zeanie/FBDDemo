@@ -9,7 +9,7 @@
  * @version 0.0.1
  */
  
- This is a small demo plugin I created that allowed me to understand how a plugin works.
+ This is a small demo plugin I created that allowed me to understand how a plugin works with WolfCMS.
  
  The plugin uses....
  Frontend
