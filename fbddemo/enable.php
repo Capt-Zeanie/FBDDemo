@@ -72,9 +72,20 @@ if ($driver == 'mysql') {
 			}	
 		}
 	}
+	
+	// Check if the plugin's settings already exist and create them if not.
+	if (Plugin::getSetting('version', 'fbddemo') === false) {
+		// Store settings new style
+		$settings = array('version' => '0.0.1',
+						  'uri'     => 'fbddemo'
+						 );
+		Plugin::setAllSettings($settings, 'fbddemo');
+	}
 
 	if ($sql_fbddemo_settings_exists) {
 		Flash::set('success', __('Plugin has been re-enabled'));    
+		Flash::set('success', Plugin::getSetting('version', 'fbddemo'));    
+		
 	} else {
 		if($sql_fbddemo_settings_created AND $sql_fbddemo_settings_altered AND $sql_fbddemo_settings_modified) {
 			Flash::set('success', __('Plugin has successfully been installed'));    

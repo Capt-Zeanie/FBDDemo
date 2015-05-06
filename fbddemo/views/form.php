@@ -15,7 +15,7 @@ if (!defined('IN_CMS')) { exit(); }
 
 ?>
 
-<form action="<?php echo BASE_URL; ?>testy<?php echo URL_SUFFIX; ?>" method="post">
+<form action="<?php echo BASE_URL; ?>test_process<?php echo URL_SUFFIX; ?>" method="post">
     <fieldset style="padding:0.5em;">
         <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('FBDDemo Settings'); ?></legend>
 		<table class="fieldset" cellspacing="0" cellpadding="0" border="0">

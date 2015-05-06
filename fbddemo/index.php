@@ -9,12 +9,17 @@
  * @subpackage plugin.fbddemo
  * @version 0.0.1
  */
-
+// Check if the plugin's settings already exist and create them if not.
+	if (Plugin::getSetting('version', 'fbddemo') == true) {
+		$Plugin_Version = Plugin::getSetting('version', 'fbddemo');
+	} else {
+		$Plugin_Version	="0.0.0";
+	}
 Plugin::setInfos(array(
     'id'          => 'fbddemo',
     'title'       => 'FBDDemo',
     'description' => __('Adds a FBDDemo page to your site'),
-    'version'     => '0.0.1',
+    'version'     => $Plugin_Version,
     'license'     => 'GPL or other',
     'author'      => 'Sean Arrowsmith',
     'website'     => 'http://www.mydomain.com',
@@ -28,10 +33,8 @@ Plugin::setInfos(array(
     // Load classes.
     AutoLoader::addFolder(CORE_ROOT.'/plugins/fbddemo/models/');
 
-     // Setup routes to the fbddemo plugin.
-    Dispatcher::addRoute(array(
- 		'/test'    => '/plugin/fbddemo/test_form',
-		'/test_process'    => '/plugin/fbddemo/test_form_process',
-       ));
-
-	
+	// Setup routes to the fbddemo plugin.
+	Dispatcher::addRoute(array(
+          '/' . $frontend_uri =>  '/plugin/fbddemo/test_form',
+         '/test_process'    => '/plugin/fbddemo/test_form_process',
+        ));

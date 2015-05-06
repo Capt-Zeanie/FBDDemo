@@ -24,10 +24,14 @@ if ($driver == 'mysql') {
 	if($PDO->exec($sql_fbddemo_settings_delete) === False) {
 		$sql_fbddemo_settings_deleted = False;
 	} else {
-		$sql_fbddemo_settings_deleted = True;
+		if (Plugin::deleteAllSettings('fbddemo') === false) {
+			$sql_fbddemo_settings_deleted = False;
+		} else {
+			$sql_fbddemo_settings_deleted = True;
+		}
 	}
 }
- 
+
 if ($sql_fbddemo_settings_deleted) {
 	// $sql_fbddemo_settings_deleted variable == TRUE if Table has been DROPPED. Set the FLASH message as successful
 	Flash::set('success', __('Plugin has been successfully uninstalled'));
