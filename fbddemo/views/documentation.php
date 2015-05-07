@@ -41,17 +41,25 @@ if (!defined('IN_CMS')) { exit(); }
  <br>
  Just put the contents into your plugin folder and head over to the woldcms administration centre and enable.<br>
  <br>
+ Installation<br>
+ Just put the fbddemo folder into your plugin folder and head over to the woldcms administration centre and enable.<br>
+ <br>
+ You can access the frontend by either....<br>
+ If WolfCMS is installed in your root folder then using www.domain.com/test will show the frontend content. <br>
+ If WolfCMS is installed inside another folder othe than your root folder then using www.domain.com/wolf_installation_folder/test will show the frontend content.<br>
+ * See the dispatcher code in index.php how the dispatcher takes /test and forwards the route onto /plugin/fbddemo/test_form which is a function in the controller.<br>
+ <br>
  Enable.php<br>
- Creates the Database and enables the plugin and then populates the table using data from sql_data.php<br>
+ Creates the Database and enables the plugin and then populates the table using data from sql_data.php and also places plugin data in the plugin setting table using Plugin::setAllSettings<br>
  <br>
  Disable.php<br>
  Disables the plugin<br>
  <br>
  Uninstall.php<br>
- Drops the plugin database table<br>
+ Drops the plugin database table and uses Plugin::deleteAllSettings to delete the plugin settings.<br>
 <br>
- Index.php<br>
- This file contains the plugin information, loads the controller etc<br>
+ Index.php
+ This file contains the plugin information, loads the controller etc and also loads the dispatcher routes.
  <br>
  FBDDemoController.php<br>
  This is the plugin controller.<br>

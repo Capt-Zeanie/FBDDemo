@@ -18,16 +18,25 @@
  Database
  Form
  
- Just put the contents into your plugin folder and head over to the woldcms administration centre and enable.
+ Installation
+ Just put the fbddemo folder into your plugin folder and head over to the woldcms administration centre and enable.
+ 
+ You can access the frontend by either....
+ If WolfCMS is installed in your root folder then using www.domain.com/test will show the frontend content. 
+ If WolfCMS is installed inside another folder othe than your root folder then using www.domain.com/wolf_installation_folder/test will show the frontend content.
+ * See the dispatcher code in index.php how the dispatcher takes /test and forwards the route onto /plugin/fbddemo/test_form which is a function in the controller.
+ 
+ 
+ 
  
  Enable.php
- Creates the Database and enables the plugin and then populates the table using data from sql_data.php
+ Creates the Database and enables the plugin and then populates the table using data from sql_data.php and also places plugin data in the plugin setting table using Plugin::setAllSettings
  
  Disable.php
  Disables the plugin
  
  Uninstall.php
- Drops the plugin database table
+ Drops the plugin database table and uses Plugin::deleteAllSettings to delete the plugin settings.
 
  Index.php
  This file contains the plugin information, loads the controller etc

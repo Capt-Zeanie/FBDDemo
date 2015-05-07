@@ -1,0 +1,16 @@
+/**
+ * FBDDemo plugin for Wolf CMS 
+ *
+ * Simple fbddemo functions for frontend and admin area.
+ *
+ * @author Sean Arrowsmith
+ * @package Wolf
+ * @subpackage plugin.fbddemo
+  */
+ 
+ To Do List.
+ Edit Plugin Setting. To allow an admin to edit the Plugin Settings
+ 
+ 
+ Versions
+ 0.0.1 Initial Coding
