@@ -9,6 +9,8 @@
  * @version 0.0.1
  */
  
+ ###*###
+ 
  This is a small demo plugin I created that allowed me to understand how a plugin works.
  
  The plugin uses....
@@ -18,9 +20,13 @@
  Database
  Form
  
- Installation
- Just put the fbddemo folder into your plugin folder and head over to the woldcms administration centre and enable.
- 
+Installing
+    Download the file from https://github.com/Capt-Zeanie/FBDDemo/archive/master.zip and unzip the folder and then rename the folder from fbddemo-master to fbddemo
+    FTP the folder fbddemo to your plugin directory on your WolfCMS site folder /wolf/plugins/ directory).
+    Go to the woldcms administration centre and enable the fbddemo plugin.
+
+Your site is now using the fbbdemo Plugin!
+  
  You can access the frontend by either....
  If WolfCMS is installed in your root folder then using www.domain.com/test will show the frontend content. 
  If WolfCMS is installed inside another folder othe than your root folder then using www.domain.com/wolf_installation_folder/test will show the frontend content.

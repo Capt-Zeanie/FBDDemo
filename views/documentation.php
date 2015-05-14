@@ -2,7 +2,7 @@
 /**
  * FBDDemo plugin for Wolf CMS 
  *
- * Simple fbddemo functions for frontend and admin area.
+ * Welcome to Capt Zeanie's FBDDemo (Frontend, Backend, Dispatcher, Demo) plugin.
  *
  * @author Sean Arrowsmith
  * @package Wolf
@@ -16,7 +16,7 @@ if (!defined('IN_CMS')) { exit(); }
 ?>
 <h1><?php echo __('Documentation'); ?></h1>
 
-<h3>Welcome to Sean's FBDDemo (Frontend, Backend, Dispatcher, Demo) plugin.</h3>
+<h3>Welcome to Capt Zeanie's FBDDemo (Frontend, Backend, Dispatcher, Demo) plugin.</h3>
 
 <p>
     The purpose of this plugin was to create a test plugin for me to easily understand how a plugin works in WolfCMS.
@@ -31,6 +31,7 @@ if (!defined('IN_CMS')) { exit(); }
  * @subpackage plugin.fbddemo<br>
  */<br>
  <br>
+ <p>###*###</p>
  <br>
  The plugin uses....<br>
  Frontend<br>
@@ -41,8 +42,12 @@ if (!defined('IN_CMS')) { exit(); }
  <br>
  Just put the contents into your plugin folder and head over to the woldcms administration centre and enable.<br>
  <br>
- Installation<br>
- Just put the fbddemo folder into your plugin folder and head over to the woldcms administration centre and enable.<br>
+ Installing <br>
+    Download the file from <a href='https://github.com/Capt-Zeanie/FBDDemo/archive/master.zip'>https://github.com/Capt-Zeanie/FBDDemo/archive/master.zip</a> and unzip the folder and then rename the folder from fbddemo-master to fbddemo <br>
+    FTP the folder fbddemo to your plugin directory on your WolfCMS site folder /wolf/plugins/ directory). <br>
+    Go to the woldcms administration centre and enable the fbddemo plugin. <br>
+ <br>
+ Your site is now using the fbbdemo Plugin! <br>
  <br>
  You can access the frontend by either....<br>
  If WolfCMS is installed in your root folder then using www.domain.com/test will show the frontend content. <br>

@@ -2,7 +2,7 @@
 /**
  * FBDDemo plugin for Wolf CMS 
  *
- * Simple fbddemo functions for frontend and admin area.
+ * Welcome to Capt Zeanie's FBDDemo (Frontend, Backend, Dispatcher, Demo) plugin.
  *
  * @author Sean Arrowsmith
  * @package Wolf
