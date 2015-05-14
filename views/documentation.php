@@ -24,11 +24,12 @@ if (!defined('IN_CMS')) { exit(); }
 <p>/**
  * FBDDemo plugin for Wolf CMS<br>
  *<br>
- * Simple fbddemo functions for frontend, backend and dispatcher.<br>
+ * Welcome to Capt Zeanie's FBDDemo (Frontend, Backend, Dispatcher, Demo) plugin.<br>
  *<br>
  * @author Sean Arrowsmith<br>
  * @package Wolf<br>
  * @subpackage plugin.fbddemo<br>
+ * @version 0.0.1<br>
  */<br>
  <br>
  <p>###*###</p>
